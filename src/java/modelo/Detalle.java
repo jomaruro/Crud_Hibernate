@@ -24,6 +24,7 @@ import javax.persistence.TemporalType;
 )
 public class Detalle implements java.io.Serializable {
 
+    
     private DetalleId id;
     private Articulo articulo;
     private Cabecera cabecera;

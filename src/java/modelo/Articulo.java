@@ -23,7 +23,6 @@ import javax.persistence.TemporalType;
 )
 public class Articulo  implements java.io.Serializable {
 
-
      private int id;
      private String nombre;
      private double precio;

@@ -26,6 +26,7 @@ import javax.persistence.TemporalType;
 )
 public class Cabecera implements java.io.Serializable {
 
+    
     private CabeceraId id;
     private Usuario usuario;
     private Cliente cliente;

@@ -22,6 +22,7 @@ import javax.persistence.TemporalType;
 )
 public class Usuario implements java.io.Serializable {
 
+    
     private int idUsuario;
     private String nombre;
     private String clave;
