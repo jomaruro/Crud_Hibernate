@@ -23,12 +23,12 @@ import javax.persistence.TemporalType;
 )
 public class Articulo  implements java.io.Serializable {
 
-     private int id;
-     private String nombre;
-     private double precio;
-     private Date fechaCreacion;
-     private Date fechaModificacion;
-     private Set<Detalle> detalles = new HashSet(0);
+    private int id;
+    private String nombre;
+    private double precio;
+    private Date fechaCreacion;
+    private Date fechaModificacion;
+    private Set<Detalle> detalles = new HashSet(0);
 
     public Articulo() {
     }

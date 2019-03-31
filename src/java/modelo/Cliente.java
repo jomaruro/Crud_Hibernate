@@ -22,7 +22,6 @@ import javax.persistence.TemporalType;
 )
 public class Cliente implements java.io.Serializable {
 
-    
     private int idCliente;
     private String nombre;
     private String cif;
