@@ -1,4 +1,6 @@
-/* global parseFloat */
+/*
+ *  Funciones para el manejo de Detalles
+ */
 
 $(document).ready(function () {
 

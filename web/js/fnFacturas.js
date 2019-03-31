@@ -1,3 +1,7 @@
+/*
+ *  Funciones para el manejo de Facturas
+ */
+
 $(document).ready(function () {
 
 //    $(document).on('click', '.btnEditar', function() {
