@@ -66,6 +66,7 @@ $(document).ready(function () {
         var numFactura = $(this).data('num_factura');
         var fechaFactura = $(this).data('fecha_factura');
         var orden = $(this).data('orden');
+        var id_articulo = $('#id_articulo' + orden).val();
         var nombre = $('#nombre' + orden).val();
         var cantidad = $('#cantidad' + orden).val();
         var precio = $('#precio' + orden).val();
@@ -84,6 +85,7 @@ $(document).ready(function () {
                 .done(function (data, textStatus, jqXHR) {
                     $('#linea' + orden).replaceWith("<tr id='linea" + orden + "'>"
                             + "<td>"
+                            + "<input type='hidden' id='id_articulo" + orden + "' name='id_articulo" + orden + "' value='"+ id_articulo + "' />"
                             + "<input type='text' class='form-control' id='nombre" + orden + "' name='nombre" + orden + "' value='" + nombre + "' readonly='readonly' />"
                             + "</td>"
                             + "<td>"
@@ -91,7 +93,6 @@ $(document).ready(function () {
                             + "</td>"
                             + "<td>"
                             + "<input class='numeros form-control' type='number' id='precio" + orden + "' name='precio" + orden + "' value='" + parseFloat(precio).toFixed(2) + "' />"
-                            + "<p>" + precio + "</p>"
                             + "</td>"
                             + "<td>"
                             + "<input type='text' class='numeros form-control' name='importe' value='" + parseFloat(cantidad * precio).toFixed(2) + "' readonly='readonly' />"

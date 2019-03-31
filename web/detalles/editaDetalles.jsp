@@ -94,6 +94,7 @@
                             Detalle detalle = (Detalle) itrDetalle.next();%>
                     <tr id="linea<%=detalle.getId().getOrden()%>" data-id="<%=detalle.getId().getOrden()%>" >
                         <td>
+                            <input type="hidden" id="id_articulo<%=detalle.getId().getOrden()%>" name="id_articulo<%=detalle.getId().getOrden()%>"value="<%=detalle.getArticulo().getId()%>" />
                             <input class="form-control" type="text" id="nombre<%=detalle.getId().getOrden()%>" name="nombre<%=detalle.getId().getOrden()%>" value="<%=detalle.getArticulo().getNombre()%>" readonly="readonly" />
                         </td>
                         <td>
