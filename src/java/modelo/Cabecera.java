@@ -22,7 +22,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "CABECERA",
-         schema = "TPV"
+         schema = "CRUD_JDBC"
 )
 public class Cabecera implements java.io.Serializable {
 

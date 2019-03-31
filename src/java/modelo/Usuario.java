@@ -18,7 +18,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name = "USUARIO",
-         schema = "TPV"
+         schema = "CRUD_JDBC"
 )
 public class Usuario implements java.io.Serializable {
 
