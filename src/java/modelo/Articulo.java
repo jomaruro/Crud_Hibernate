@@ -19,7 +19,7 @@ import javax.persistence.TemporalType;
  */
 @Entity
 @Table(name="ARTICULO"
-    ,schema="TPV"
+    ,schema="CRUD_JDBC"
 )
 public class Articulo  implements java.io.Serializable {
 
